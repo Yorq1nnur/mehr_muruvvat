@@ -20,55 +20,55 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
 
   List<PageDataModel> pagesData = [
     PageDataModel(
-      iconPath: AppImages.firstOnboard,
+      iconPath: AppImages.splash,
       title: "MEXR-MURUVVAT XAYRIYA JAMOAT FONDI",
       subtitle:
       "Mexr-Muruvvat Xayriya Jamoat Fondi",
     ),
     PageDataModel(
-      iconPath: AppImages.firstOnboard,
+      iconPath: AppImages.splash,
       title: "MEXR-MURUVVAT XAYRIYA JAMOAT FONDI",
       subtitle:
       "Mexr-Muruvvat Xayriya Jamoat Fondi",
     ),
     PageDataModel(
-      iconPath: AppImages.firstOnboard,
+      iconPath: AppImages.splash,
       title: "MEXR-MURUVVAT XAYRIYA JAMOAT FONDI",
       subtitle:
       "Mexr-Muruvvat Xayriya Jamoat Fondi",
     ),
     PageDataModel(
-      iconPath: AppImages.firstOnboard,
+      iconPath: AppImages.splash,
       title: "MEXR-MURUVVAT XAYRIYA JAMOAT FONDI",
       subtitle:
       "Mexr-Muruvvat Xayriya Jamoat Fondi",
     ),
     PageDataModel(
-      iconPath: AppImages.firstOnboard,
+      iconPath: AppImages.splash,
       title: "MEXR-MURUVVAT XAYRIYA JAMOAT FONDI",
       subtitle:
       "Mexr-Muruvvat Xayriya Jamoat Fondi",
     ),
     PageDataModel(
-      iconPath: AppImages.firstOnboard,
+      iconPath: AppImages.splash,
       title: "MEXR-MURUVVAT XAYRIYA JAMOAT FONDI",
       subtitle:
       "Mexr-Muruvvat Xayriya Jamoat Fondi",
     ),
     PageDataModel(
-      iconPath: AppImages.firstOnboard,
+      iconPath: AppImages.splash,
       title: "MEXR-MURUVVAT XAYRIYA JAMOAT FONDI",
       subtitle:
       "Mexr-Muruvvat Xayriya Jamoat Fondi",
     ),
     PageDataModel(
-      iconPath: AppImages.firstOnboard,
+      iconPath: AppImages.splash,
       title: "MEXR-MURUVVAT XAYRIYA JAMOAT FONDI",
       subtitle:
       "Mexr-Muruvvat Xayriya Jamoat Fondi",
     ),
     PageDataModel(
-      iconPath: AppImages.firstOnboard,
+      iconPath: AppImages.splash,
       title: "MEXR-MURUVVAT XAYRIYA JAMOAT FONDI",
       subtitle:
       "Mexr-Muruvvat Xayriya Jamoat Fondi",
