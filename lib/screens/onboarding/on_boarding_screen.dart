@@ -26,49 +26,49 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
       "Mexr-Muruvvat Xayriya Jamoat Fondi",
     ),
     PageDataModel(
-      iconPath: AppImages.splash,
+      iconPath: AppImages.firstSplash,
       title: "MEXR-MURUVVAT XAYRIYA JAMOAT FONDI",
       subtitle:
       "Mexr-Muruvvat Xayriya Jamoat Fondi",
     ),
     PageDataModel(
-      iconPath: AppImages.splash,
+      iconPath: AppImages.secondSplash,
       title: "MEXR-MURUVVAT XAYRIYA JAMOAT FONDI",
       subtitle:
       "Mexr-Muruvvat Xayriya Jamoat Fondi",
     ),
     PageDataModel(
-      iconPath: AppImages.splash,
+      iconPath: AppImages.thirdSplash,
       title: "MEXR-MURUVVAT XAYRIYA JAMOAT FONDI",
       subtitle:
       "Mexr-Muruvvat Xayriya Jamoat Fondi",
     ),
     PageDataModel(
-      iconPath: AppImages.splash,
+      iconPath: AppImages.fourSplash,
       title: "MEXR-MURUVVAT XAYRIYA JAMOAT FONDI",
       subtitle:
       "Mexr-Muruvvat Xayriya Jamoat Fondi",
     ),
     PageDataModel(
-      iconPath: AppImages.splash,
+      iconPath: AppImages.fiveSplash,
       title: "MEXR-MURUVVAT XAYRIYA JAMOAT FONDI",
       subtitle:
       "Mexr-Muruvvat Xayriya Jamoat Fondi",
     ),
     PageDataModel(
-      iconPath: AppImages.splash,
+      iconPath: AppImages.sixSplash,
       title: "MEXR-MURUVVAT XAYRIYA JAMOAT FONDI",
       subtitle:
       "Mexr-Muruvvat Xayriya Jamoat Fondi",
     ),
     PageDataModel(
-      iconPath: AppImages.splash,
+      iconPath: AppImages.sevenSplash,
       title: "MEXR-MURUVVAT XAYRIYA JAMOAT FONDI",
       subtitle:
       "Mexr-Muruvvat Xayriya Jamoat Fondi",
     ),
     PageDataModel(
-      iconPath: AppImages.splash,
+      iconPath: AppImages.eightSplash,
       title: "MEXR-MURUVVAT XAYRIYA JAMOAT FONDI",
       subtitle:
       "Mexr-Muruvvat Xayriya Jamoat Fondi",

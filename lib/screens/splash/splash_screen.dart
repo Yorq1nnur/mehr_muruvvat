@@ -15,23 +15,23 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-  // @override
-  // void initState() {
-  //   Future.delayed(
-  //     const Duration(seconds: 2),
-  //         () {
-  //       Navigator.pushReplacement(
-  //         context,
-  //         MaterialPageRoute(
-  //           builder: (context) {
-  //             return const OnBoardingScreen();
-  //           },
-  //         ),
-  //       );
-  //     },
-  //   );
-  //   super.initState();
-  // }
+  @override
+  void initState() {
+    Future.delayed(
+      const Duration(seconds: 5),
+          () {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (context) {
+              return const OnBoardingScreen();
+            },
+          ),
+        );
+      },
+    );
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     width = MediaQuery.of(context).size.width;
@@ -61,9 +61,10 @@ class _SplashScreenState extends State<SplashScreen> {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Image.asset(
-                  AppImages.flag,
+                  AppImages.firstSplash,
                   width: width / 3.5.w,
                   height: width / 3.5.h,
+                  fit: BoxFit.cover,
                 ),
               ),
             ),
@@ -73,7 +74,7 @@ class _SplashScreenState extends State<SplashScreen> {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Image.asset(
-                  AppImages.firstSplash,
+                  AppImages.secondSplash,
                   width: width / 3.5.w,
                   height: width / 3.5.h,
                   fit: BoxFit.cover,
@@ -86,7 +87,7 @@ class _SplashScreenState extends State<SplashScreen> {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Image.asset(
-                  AppImages.secondSplash,
+                  AppImages.thirdSplash,
                   width: width / 3.5.w,
                   height: width / 3.5.h,
                   fit: BoxFit.cover,
@@ -99,7 +100,7 @@ class _SplashScreenState extends State<SplashScreen> {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Image.asset(
-                  AppImages.thirdSplash,
+                  AppImages.flag,
                   width: width / 3.5.w,
                   height: width / 3.5.h,
                   fit: BoxFit.cover,
@@ -112,7 +113,7 @@ class _SplashScreenState extends State<SplashScreen> {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Image.asset(
-                  AppImages.fourSplash,
+                  AppImages.calendar,
                   width: width / 3.5.w,
                   height: width / 3.5.h,
                   fit: BoxFit.cover,
@@ -121,11 +122,14 @@ class _SplashScreenState extends State<SplashScreen> {
             ),
             Align(
               alignment: Alignment.center,
-              child: Text("MEXR-MURUVVAT XJF", style: AppTextStyle.interBold.copyWith(
-                color: AppColors.blue,
-                fontSize: 25.sp,
-                fontWeight: FontWeight.w800,
-              ),),
+              child: Text(
+                "MEXR-MURUVVAT XJF",
+                style: AppTextStyle.interBold.copyWith(
+                  color: AppColors.blue,
+                  fontSize: 25.sp,
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
             ),
             Positioned(
               bottom: 50.h,
@@ -133,9 +137,10 @@ class _SplashScreenState extends State<SplashScreen> {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Image.asset(
-                  AppImages.flag,
+                  AppImages.fiveSplash,
                   width: width / 3.5.w,
                   height: width / 3.5.h,
+                  fit: BoxFit.cover,
                 ),
               ),
             ),
@@ -145,7 +150,7 @@ class _SplashScreenState extends State<SplashScreen> {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Image.asset(
-                  AppImages.firstSplash,
+                  AppImages.sixSplash,
                   width: width / 3.5.w,
                   height: width / 3.5.h,
                   fit: BoxFit.cover,
@@ -158,7 +163,7 @@ class _SplashScreenState extends State<SplashScreen> {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Image.asset(
-                  AppImages.secondSplash,
+                  AppImages.sevenSplash,
                   width: width / 3.5.w,
                   height: width / 3.5.h,
                   fit: BoxFit.cover,
@@ -171,7 +176,7 @@ class _SplashScreenState extends State<SplashScreen> {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Image.asset(
-                  AppImages.thirdSplash,
+                  AppImages.logo,
                   width: width / 3.5.w,
                   height: width / 3.5.h,
                   fit: BoxFit.cover,
@@ -184,7 +189,7 @@ class _SplashScreenState extends State<SplashScreen> {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Image.asset(
-                  AppImages.fourSplash,
+                  AppImages.glass,
                   width: width / 3.5.w,
                   height: width / 3.5.h,
                   fit: BoxFit.cover,
