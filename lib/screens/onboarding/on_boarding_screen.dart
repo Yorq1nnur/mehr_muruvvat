@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:mehr_muruvvat/screens/onboarding/page_data_model.dart';
 import 'package:mehr_muruvvat/screens/onboarding/page_item.dart';
+import 'package:mehr_muruvvat/utils/colors/app_colors.dart';
 import 'package:mehr_muruvvat/utils/size/size_utils.dart';
-import '../../utils/images/app_images.dart';
+import 'package:mehr_muruvvat/utils/styles/app_text_style.dart';
+import 'package:zoom_tap_animation/zoom_tap_animation.dart';
 import '../main_screen/main_screen.dart';
 import 'boarding_bottom_view.dart';
 
@@ -18,63 +20,6 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
   int activeIndex = 0;
   final PageController pageController = PageController();
 
-  List<PageDataModel> pagesData = [
-    PageDataModel(
-      iconPath: AppImages.firstOnboard,
-      title: "MEXR-MURUVVAT XAYRIYA JAMOAT FONDI",
-      subtitle:
-      "Mexr-Muruvvat Xayriya Jamoat Fondi",
-    ),
-    PageDataModel(
-      iconPath: AppImages.firstOnboard,
-      title: "MEXR-MURUVVAT XAYRIYA JAMOAT FONDI",
-      subtitle:
-      "Mexr-Muruvvat Xayriya Jamoat Fondi",
-    ),
-    PageDataModel(
-      iconPath: AppImages.firstOnboard,
-      title: "MEXR-MURUVVAT XAYRIYA JAMOAT FONDI",
-      subtitle:
-      "Mexr-Muruvvat Xayriya Jamoat Fondi",
-    ),
-    PageDataModel(
-      iconPath: AppImages.firstOnboard,
-      title: "MEXR-MURUVVAT XAYRIYA JAMOAT FONDI",
-      subtitle:
-      "Mexr-Muruvvat Xayriya Jamoat Fondi",
-    ),
-    PageDataModel(
-      iconPath: AppImages.firstOnboard,
-      title: "MEXR-MURUVVAT XAYRIYA JAMOAT FONDI",
-      subtitle:
-      "Mexr-Muruvvat Xayriya Jamoat Fondi",
-    ),
-    PageDataModel(
-      iconPath: AppImages.firstOnboard,
-      title: "MEXR-MURUVVAT XAYRIYA JAMOAT FONDI",
-      subtitle:
-      "Mexr-Muruvvat Xayriya Jamoat Fondi",
-    ),
-    PageDataModel(
-      iconPath: AppImages.firstOnboard,
-      title: "MEXR-MURUVVAT XAYRIYA JAMOAT FONDI",
-      subtitle:
-      "Mexr-Muruvvat Xayriya Jamoat Fondi",
-    ),
-    PageDataModel(
-      iconPath: AppImages.firstOnboard,
-      title: "MEXR-MURUVVAT XAYRIYA JAMOAT FONDI",
-      subtitle:
-      "Mexr-Muruvvat Xayriya Jamoat Fondi",
-    ),
-    PageDataModel(
-      iconPath: AppImages.firstOnboard,
-      title: "MEXR-MURUVVAT XAYRIYA JAMOAT FONDI",
-      subtitle:
-      "Mexr-Muruvvat Xayriya Jamoat Fondi",
-    ),
-  ];
-
   @override
   Widget build(BuildContext context) {
     return AnnotatedRegion(
@@ -84,6 +29,27 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
         statusBarBrightness: Brightness.light,
       ),
       child: Scaffold(
+        backgroundColor: AppColors.white,
+        appBar: AppBar(
+          elevation: 0,
+          backgroundColor: AppColors.white,
+          title: ZoomTapAnimation(
+            child: Text(
+              "SKIP",
+              style: AppTextStyle.interBold.copyWith(
+                color: AppColors.black,
+              ),
+            ),
+            onTap: () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const MainScreen(),
+                ),
+              );
+            },
+          ),
+        ),
         body: Column(
           children: [
             Expanded(
@@ -93,7 +59,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                 children: [
                   ...List.generate(
                     pagesData.length,
-                        (index) => PageItem(
+                    (index) => PageItem(
                       pageDataModel: pagesData[index],
                       horizontalPadding: index == 0 ? 70.getW() : 55.getW(),
                     ),
@@ -119,6 +85,16 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                       },
                     ),
                   );
+                }
+              },
+              backTap: () {
+                if (activeIndex > 0) {
+                  setState(() {
+                    activeIndex--;
+                  });
+                  pageController.jumpToPage(activeIndex);
+                } else {
+                  return;
                 }
               },
             ),

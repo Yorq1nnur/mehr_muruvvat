@@ -3,18 +3,18 @@ import 'package:mehr_muruvvat/screens/onboarding/page_data_model.dart';
 import 'package:mehr_muruvvat/utils/size/size_utils.dart';
 import '../../../utils/colors/app_colors.dart';
 import '../../../utils/styles/app_text_style.dart';
-import '../main_screen/main_screen.dart';
 
 class BoardingBottomView extends StatelessWidget {
   const BoardingBottomView(
       {super.key,
         required this.pagesData,
         required this.activeIndex,
-        required this.onTap});
+        required this.onTap, required this.backTap});
 
   final List<PageDataModel> pagesData;
   final int activeIndex;
   final VoidCallback onTap;
+  final VoidCallback backTap;
 
   @override
   Widget build(BuildContext context) {
@@ -24,18 +24,9 @@ class BoardingBottomView extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           TextButton(
-            onPressed: () {
-              Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(
-                  builder: (context) {
-                    return const MainScreen();
-                  },
-                ),
-              );
-            },
+            onPressed: backTap,
             child: Text(
-              "SKIP",
+              "BACK",
               style: AppTextStyle.interRegular.copyWith(
                   fontSize: 14, color: AppColors.c_090F47.withOpacity(0.45)),
             ),

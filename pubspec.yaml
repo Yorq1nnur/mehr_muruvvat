@@ -38,6 +38,8 @@ dependencies:
   flutter_svg: ^2.0.9
   flutter_screenutil: ^5.9.0
   zoom_tap_animation: ^1.1.0
+  carousel_slider: ^4.2.1
+  lottie: ^3.0.0
 
 dev_dependencies:
   flutter_test:
@@ -67,6 +69,7 @@ flutter:
     - assets/fonts/bodoni/
     - assets/images/
     - assets/icons/
+    - assets/lottie/
 
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mehr_muruvvat/screens/onboarding/page_data_model.dart';
 import 'package:mehr_muruvvat/utils/size/size_utils.dart';
 import '../../utils/colors/app_colors.dart';
@@ -17,7 +18,9 @@ class PageItem extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset(pageDataModel.iconPath),
+          ClipRRect(
+              borderRadius: BorderRadius.circular(24),
+              child: Image.asset(pageDataModel.iconPath, height: 200.h, width: 200.w, fit: BoxFit.cover,)),
           SizedBox(height: 50.getH()),
           Text(
             pageDataModel.title,
