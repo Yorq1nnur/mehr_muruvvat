@@ -19,6 +19,8 @@ class AppImages {
 
 //.jpg
 
-
 //.gif
+
+//lottie
+  static const String animation = "assets/lottie/animation.json";
 }
