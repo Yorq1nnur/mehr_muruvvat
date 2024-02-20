@@ -9,6 +9,10 @@ class AppImages {
   static const String sixSplash = "assets/images/six_splash.png";
   static const String sevenSplash = "assets/images/seven_splash.png";
   static const String eightSplash = "assets/images/eight_splash.png";
+  static const String instagram = "assets/images/instagram.png";
+  static const String telegram = "assets/images/telegram.png";
+  static const String chrome = "assets/images/chrome.png";
+  static const String youTube = "assets/images/you_tube.png";
 
   //.svg
   static const String flag = "assets/images/flag.jpg";
