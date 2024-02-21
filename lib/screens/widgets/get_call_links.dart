@@ -15,20 +15,20 @@ class GetCallLinks extends StatefulWidget {
 
 class _GetCallLinksState extends State<GetCallLinks> {
 
-  _launchCaller() async {
-    const url = "tel:+998905898718";
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Could not launch $url';
-    }
-  }
-
-  @override
-  void initState() {
-    _launchCaller();
-    super.initState();
-  }
+  // _launchCaller() async {
+  //   const url = "tel:+998905898718";
+  //   if (await canLaunch(url)) {
+  //     await launch(url);
+  //   } else {
+  //     throw 'Could not launch $url';
+  //   }
+  // }
+  //
+  // @override
+  // void initState() {
+  //   _launchCaller();
+  //   super.initState();
+  // }
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -126,7 +126,6 @@ class _GetCallLinksState extends State<GetCallLinks> {
           ),
           ZoomTapAnimation(
             onTap: () async {
-              _launchCaller();
               setState(() {
 
               });
