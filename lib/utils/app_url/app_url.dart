@@ -7,4 +7,15 @@ class AppUrl {
   static const String facebook = "https://www.facebook.com/groups/784458705765474/?ref=share&mibextid=NSMWBT";
   static const String callCenter = "tel:+998905898718";
 
+  //YouTube videos
+  static const String ogirSinovli = "https://youtube.com/watch?v=iXjWkzZBTr0&si=gszndTc9rVeAMB0_";
+  static const String koziOjiz100 = "https://youtu.be/a669O9IcDXQ?si=FpYQAQeFW6I8ctyY";
+  static const String yelkamaYelka = "https://youtu.be/Q549VLs6YP8?si=iZf7JgICHjTiuQiY";
+  static const String bolalargaHayriya = "";
+  // static const String koziOjiz100 = "";
+  // static const String koziOjiz100 = "";
+  // static const String koziOjiz100 = "";
+  // static const String koziOjiz100 = "";
+  // static const String koziOjiz100 = "";
+
 }
