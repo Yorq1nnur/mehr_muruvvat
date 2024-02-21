@@ -14,7 +14,6 @@ class GetCallLinks extends StatefulWidget {
 }
 
 class _GetCallLinksState extends State<GetCallLinks> {
-
   // _launchCaller() async {
   //   const url = "tel:+998905898718";
   //   if (await canLaunch(url)) {
@@ -38,10 +37,12 @@ class _GetCallLinksState extends State<GetCallLinks> {
         children: [
           ZoomTapAnimation(
             onTap: () async {
-              await launchUrl(Uri.parse(AppUrl.instagram,),);
-              setState(() {
-
-              });
+              await launchUrl(
+                Uri.parse(
+                  AppUrl.instagram,
+                ),
+              );
+              setState(() {});
             },
             child: Container(
               height: 30.h,
@@ -60,10 +61,12 @@ class _GetCallLinksState extends State<GetCallLinks> {
           ),
           ZoomTapAnimation(
             onTap: () async {
-              setState(() {
-
-              });
-              await launchUrl(Uri.parse(AppUrl.telegram,),);
+              setState(() {});
+              await launchUrl(
+                Uri.parse(
+                  AppUrl.telegram,
+                ),
+              );
             },
             child: Container(
               height: 30.h,
@@ -82,10 +85,12 @@ class _GetCallLinksState extends State<GetCallLinks> {
           ),
           ZoomTapAnimation(
             onTap: () async {
-              setState(() {
-
-              });
-              await launchUrl(Uri.parse(AppUrl.youTube,),);
+              setState(() {});
+              await launchUrl(
+                Uri.parse(
+                  AppUrl.youTube,
+                ),
+              );
             },
             child: Container(
               height: 30.h,
@@ -104,10 +109,12 @@ class _GetCallLinksState extends State<GetCallLinks> {
           ),
           ZoomTapAnimation(
             onTap: () async {
-              setState(() {
-
-              });
-              await launchUrl(Uri.parse(AppUrl.facebook,),);
+              setState(() {});
+              await launchUrl(
+                Uri.parse(
+                  AppUrl.facebook,
+                ),
+              );
             },
             child: Container(
               height: 30.h,
@@ -126,10 +133,12 @@ class _GetCallLinksState extends State<GetCallLinks> {
           ),
           ZoomTapAnimation(
             onTap: () async {
-              setState(() {
-
-              });
-              await launchUrl(Uri.parse(AppUrl.callCenter,),);
+              setState(() {});
+              await launchUrl(
+                Uri.parse(
+                  AppUrl.callCenter,
+                ),
+              );
             },
             child: Container(
               height: 30.h,
