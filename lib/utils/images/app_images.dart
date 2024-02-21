@@ -13,6 +13,8 @@ class AppImages {
   static const String telegram = "assets/images/telegram.png";
   static const String chrome = "assets/images/chrome.png";
   static const String youTube = "assets/images/you_tube.png";
+  static const String facebook = "assets/images/facebook.png";
+  static const String callCenter = "assets/images/call_center.png";
 
   //.svg
   static const String flag = "assets/images/flag.jpg";
