@@ -69,7 +69,7 @@ flutter:
   assets:
     - assets/fonts/bodoni/
     - assets/images/
-    - assets/images/youtube
+    - assets/images/youtube/
     - assets/icons/
     - assets/lottie/
 
