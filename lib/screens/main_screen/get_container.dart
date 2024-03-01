@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mehr_muruvvat/utils/colors/app_colors.dart';
 import 'package:zoom_tap_animation/zoom_tap_animation.dart';
 import '../../utils/styles/app_text_style.dart';
 
@@ -8,15 +9,10 @@ class GetZoomContainer extends StatefulWidget {
       {super.key,
       required this.onTap,
       required this.title,
-      required this.containerColor,
-      required this.spreadColors,
-      required this.titleColor});
+      });
 
   final VoidCallback onTap;
   final String title;
-  final Color containerColor;
-  final Color spreadColors;
-  final Color titleColor;
 
   @override
   State<GetZoomContainer> createState() => _GetZoomContainerState();
@@ -30,14 +26,14 @@ class _GetZoomContainerState extends State<GetZoomContainer> {
       child: Container(
         margin: EdgeInsets.symmetric(vertical: 10.h, horizontal: 30.w),
         decoration: BoxDecoration(
-          color: widget.containerColor,
+          color: AppColors.blue,
           borderRadius: BorderRadius.circular(
             10.r,
           ),
           boxShadow: [
             BoxShadow(
-              color: widget.spreadColors,
-              spreadRadius: 5,
+              color: AppColors.blue,
+              spreadRadius: 5.r,
             ),
           ],
         ),
@@ -45,7 +41,7 @@ class _GetZoomContainerState extends State<GetZoomContainer> {
           child: Text(
             widget.title,
             style: AppTextStyle.interBold.copyWith(
-              color: widget.titleColor,
+              color: AppColors.black,
               fontSize: 20.sp,
               fontWeight: FontWeight.w900,
             ),

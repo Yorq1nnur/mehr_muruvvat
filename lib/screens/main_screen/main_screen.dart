@@ -3,8 +3,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mehr_muruvvat/screens/ibratli_videolar_screen/ibratli_videolar_screen.dart';
 import 'package:mehr_muruvvat/screens/main_screen/carusel_models.dart';
 import 'package:mehr_muruvvat/screens/main_screen/get_container.dart';
+import 'package:mehr_muruvvat/screens/main_screen/qilingan_ishlar_models.dart';
+import 'package:mehr_muruvvat/screens/qilinayotgan_ishlar_screen/qilinayotgan_ishlar_screen.dart';
 import 'package:mehr_muruvvat/screens/widgets/get_call_links.dart';
 import 'package:mehr_muruvvat/utils/colors/app_colors.dart';
 import '../qilingan_ishlar_screen/qilingan_ishlar_screen.dart';
@@ -36,7 +39,9 @@ class _MainScreenState extends State<MainScreen> {
             SizedBox(
               height: 30.h,
             ),
-            GetMainCarusel(),
+            GetMainCarusel(
+              images: qilinganIshlarModels,
+            ),
             SizedBox(
               height: 50.h,
             ),
@@ -50,26 +55,29 @@ class _MainScreenState extends State<MainScreen> {
                 );
               },
               title: "QILINGAN ISHLAR",
-              containerColor: Colors.blue,
-              spreadColors: Colors.blue,
-              titleColor: AppColors.black,
             ),
             GetZoomContainer(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => QilinayotganIshlarScreen(),
+                  ),
+                );
+              },
               title: "QILINAYOTGAN ISHLAR",
-              containerColor: Colors.blue,
-              spreadColors: Colors.blue,
-              titleColor: AppColors.black,
             ),
-            // GetZoomContainer(
-            //   onTap: () {
-            //     Navigator.push(context, MaterialPageRoute(builder: (context) => CallCenterScreen()));
-            //   },
-            //   title: "BIZ BILAN BOG'LANISH",
-            //   containerColor: Colors.blue,
-            //   spreadColors: Colors.blue,
-            //   titleColor: AppColors.black,
-            // ),
+            GetZoomContainer(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => IbratliVideolarScreen(),
+                  ),
+                );
+              },
+              title: "IBRATLI VIDEOLAR",
+            ),
             Spacer(),
             GetCallLinks(),
           ],
