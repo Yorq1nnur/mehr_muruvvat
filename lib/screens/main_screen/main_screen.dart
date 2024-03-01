@@ -5,8 +5,8 @@ import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mehr_muruvvat/screens/main_screen/carusel_models.dart';
 import 'package:mehr_muruvvat/screens/main_screen/get_container.dart';
+import 'package:mehr_muruvvat/screens/widgets/get_call_links.dart';
 import 'package:mehr_muruvvat/utils/colors/app_colors.dart';
-import '../call_center_screen.dart';
 import '../qilingan_ishlar_screen/qilingan_ishlar_screen.dart';
 
 class MainScreen extends StatefulWidget {
@@ -50,26 +50,28 @@ class _MainScreenState extends State<MainScreen> {
                 );
               },
               title: "QILINGAN ISHLAR",
-              containerColor: AppColors.blue,
-              spreadColors: AppColors.blueAccent,
+              containerColor: Colors.blue,
+              spreadColors: Colors.blue,
               titleColor: AppColors.black,
             ),
             GetZoomContainer(
               onTap: () {},
               title: "QILINAYOTGAN ISHLAR",
-              containerColor: AppColors.yellow,
-              spreadColors: AppColors.yellowAccent,
-              titleColor: AppColors.red,
+              containerColor: Colors.blue,
+              spreadColors: Colors.blue,
+              titleColor: AppColors.black,
             ),
-            GetZoomContainer(
-              onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => CallCenterScreen()));
-              },
-              title: "BIZ BILAN BOG'LANISH",
-              containerColor: AppColors.red,
-              spreadColors: AppColors.redAccent,
-              titleColor: AppColors.yellow,
-            ),
+            // GetZoomContainer(
+            //   onTap: () {
+            //     Navigator.push(context, MaterialPageRoute(builder: (context) => CallCenterScreen()));
+            //   },
+            //   title: "BIZ BILAN BOG'LANISH",
+            //   containerColor: Colors.blue,
+            //   spreadColors: Colors.blue,
+            //   titleColor: AppColors.black,
+            // ),
+            Spacer(),
+            GetCallLinks(),
           ],
         ),
       ),

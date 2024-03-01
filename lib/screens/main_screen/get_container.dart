@@ -4,7 +4,13 @@ import 'package:zoom_tap_animation/zoom_tap_animation.dart';
 import '../../utils/styles/app_text_style.dart';
 
 class GetZoomContainer extends StatefulWidget {
-  const GetZoomContainer({super.key, required this.onTap, required this.title, required this.containerColor, required this.spreadColors, required this.titleColor});
+  const GetZoomContainer(
+      {super.key,
+      required this.onTap,
+      required this.title,
+      required this.containerColor,
+      required this.spreadColors,
+      required this.titleColor});
 
   final VoidCallback onTap;
   final String title;
@@ -25,7 +31,9 @@ class _GetZoomContainerState extends State<GetZoomContainer> {
         margin: EdgeInsets.symmetric(vertical: 10.h, horizontal: 30.w),
         decoration: BoxDecoration(
           color: widget.containerColor,
-          borderRadius: BorderRadius.circular(24),
+          borderRadius: BorderRadius.circular(
+            10.r,
+          ),
           boxShadow: [
             BoxShadow(
               color: widget.spreadColors,
@@ -38,13 +46,12 @@ class _GetZoomContainerState extends State<GetZoomContainer> {
             widget.title,
             style: AppTextStyle.interBold.copyWith(
               color: widget.titleColor,
-              fontSize: 25.sp,
+              fontSize: 20.sp,
               fontWeight: FontWeight.w900,
             ),
           ),
         ),
       ),
     );
-
   }
 }
