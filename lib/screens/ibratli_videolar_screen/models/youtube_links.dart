@@ -1,5 +1,7 @@
+import 'package:mehr_muruvvat/utils/images/app_images.dart';
+
 class YouTubeLinks{
-  List<String> youTubeLinks = [
+  static const List<String> youTubeLinks = [
     ///TODO So'qir
     "https://youtu.be/agk2A75T3Ds?si=axBT9_ZeLb333z_1",
     ///TODO Bemor
@@ -20,24 +22,26 @@ class YouTubeLinks{
     "https://youtu.be/9l300LNjyC4?si=azfEPakI0tOvkPhc",
   ];
 
-  List<String> images = [
+  static const List<String> images = [
     ///TODO So'qir
-    "",
+    AppImages.soqir,
     ///TODO Bemor
-    "",
+    AppImages.bemor,
     ///TODO Sog'inch
-    "",
+    AppImages.soginch,
     ///TODO Kechikish
-    "",
+    AppImages.kechikish,
     ///TODO Shukrona
-    "",
+    AppImages.shukrona,
     ///TODO Ona dardi
-    "",
+    AppImages.onaDardi,
     ///TODO Ehsonning mukofoti
-    "",
+    AppImages.ehsonningMukofoti,
     ///TODO Bolallikka chipta
-    "",
+    AppImages.bolalikkaChipta,
     ///TODO Hamma ham bunday savobli ishni qila olmaydi
-    "",
+    AppImages.savobliIsh,
   ];
+
+  YouTubeLinks();
 }

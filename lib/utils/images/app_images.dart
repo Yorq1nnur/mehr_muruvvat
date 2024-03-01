@@ -16,6 +16,26 @@ class AppImages {
   static const String facebook = "assets/images/facebook.png";
   static const String callCenter = "assets/images/call_center.png";
 
+  ///TODO YOUTUBE
+  ///TODO So'qir
+  static const String soqir = "assets/images/youtube/soqir.png";
+  ///TODO Bemor
+  static const String bemor = "assets/images/youtube/bemor.png";
+  ///TODO Sog'inch
+  static const String soginch = "assets/images/youtube/soginch.png";
+  ///TODO Kechikish
+  static const String kechikish = "assets/images/youtube/kechikish.png";
+  ///TODO Shukrona
+  static const String shukrona = "assets/images/youtube/shukrona.png";
+  ///TODO Ona dardi
+  static const String onaDardi = "assets/images/youtube/ona_dardi.png";
+  ///TODO Ehsonning mukofoti
+  static const String ehsonningMukofoti = "assets/images/youtube/ehsonning_mukofoti.png";
+  ///TODO Bolallikka chipta
+  static const String bolalikkaChipta = "assets/images/youtube/bolalikka_chipta.png";
+  ///TODO Hamma ham bunday savobli ishni qila olmaydi
+  static const String savobliIsh = "assets/images/youtube/savobli_ish.png";
+
   //.svg
   static const String flag = "assets/images/flag.jpg";
   static const String logo = "assets/images/logo.jpg";

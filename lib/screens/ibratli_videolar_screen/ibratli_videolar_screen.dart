@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mehr_muruvvat/screens/main_screen/carusel_models.dart';
-import 'package:mehr_muruvvat/screens/main_screen/qilingan_ishlar_models.dart';
+import 'package:mehr_muruvvat/screens/ibratli_videolar_screen/models/youtube_links.dart';
+import 'package:mehr_muruvvat/screens/widgets/carusel_models.dart';
 import 'package:mehr_muruvvat/utils/colors/app_colors.dart';
 
 class IbratliVideolarScreen extends StatefulWidget {
@@ -38,7 +38,8 @@ class _IbratliVideolarScreenState extends State<IbratliVideolarScreen> {
                 size: 30.w,
               ),
             ),
-            
+            SizedBox(height: 20.h,),
+            const GetMainCarusel(images: YouTubeLinks.images)
             ],
         ),
       ),

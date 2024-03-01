@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mehr_muruvvat/screens/ibratli_videolar_screen/ibratli_videolar_screen.dart';
-import 'package:mehr_muruvvat/screens/main_screen/carusel_models.dart';
+import 'package:mehr_muruvvat/screens/widgets/carusel_models.dart';
 import 'package:mehr_muruvvat/screens/main_screen/get_container.dart';
 import 'package:mehr_muruvvat/screens/main_screen/qilingan_ishlar_models.dart';
 import 'package:mehr_muruvvat/screens/qilinayotgan_ishlar_screen/qilinayotgan_ishlar_screen.dart';
