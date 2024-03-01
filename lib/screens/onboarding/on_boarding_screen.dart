@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mehr_muruvvat/screens/onboarding/page_data_model.dart';
 import 'package:mehr_muruvvat/screens/onboarding/page_item.dart';
 import 'package:mehr_muruvvat/utils/colors/app_colors.dart';
@@ -61,7 +62,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                     pagesData.length,
                     (index) => PageItem(
                       pageDataModel: pagesData[index],
-                      horizontalPadding: index == 0 ? 70.getW() : 55.getW(),
+                      horizontalPadding: index == 0 ? 70.w : 55.w,
                     ),
                   )
                 ],
@@ -98,7 +99,9 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                 }
               },
             ),
-            SizedBox(height: 30.getH()),
+            SizedBox(
+              height: 30.h,
+            ),
           ],
         ),
       ),
