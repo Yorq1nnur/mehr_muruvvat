@@ -56,7 +56,7 @@ class YouTubeLinks {
     "Bolallikka chipta",
 
     ///TODO Hamma ham bunday savobli ishni qila olmaydi
-    "Hamma ham bunday savobli ishni qila olmaydi",
+    "Hamma ham savobli ish qila olmaydi",
   ];
 
   static const List<String> images = [

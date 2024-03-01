@@ -1,9 +1,15 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mehr_muruvvat/screens/ibratli_videolar_screen/models/youtube_links.dart';
 import 'package:mehr_muruvvat/screens/widgets/carusel_models.dart';
 import 'package:mehr_muruvvat/utils/colors/app_colors.dart';
+import 'package:mehr_muruvvat/utils/images/app_images.dart';
+import 'package:mehr_muruvvat/utils/styles/app_text_style.dart';
 
 class IbratliVideolarScreen extends StatefulWidget {
   const IbratliVideolarScreen({super.key});
@@ -38,9 +44,47 @@ class _IbratliVideolarScreenState extends State<IbratliVideolarScreen> {
                 size: 30.w,
               ),
             ),
-            SizedBox(height: 20.h,),
-            const GetMainCarusel(images: YouTubeLinks.images)
-            ],
+            SizedBox(
+              height: 20.h,
+            ),
+            const GetMainCarusel(
+              images: YouTubeLinks.images,
+            ),
+
+            Expanded(
+              child: SingleChildScrollView(padding: EdgeInsets.symmetric(vertical: 10.h), physics: BouncingScrollPhysics(), scrollDirection: Axis.vertical, child: Column(children: [...List.generate(YouTubeLinks.videoTitles.length, (index) => Padding(
+                padding: EdgeInsets.symmetric(
+                  horizontal: 10.w,
+                ),
+                child: Stack(
+                  children: [
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(
+                        16.r,
+                      ),
+                      child: Image.asset(
+                        YouTubeLinks.images[index],
+                        height: 200.h,
+                        width: double.infinity,
+                        fit: BoxFit.contain,
+                      ),
+                    ),
+                    Align(
+                      alignment: Alignment.topCenter,
+                      child: Text(
+                        YouTubeLinks.videoTitles[index],
+                        style: AppTextStyle.bodoniBold.copyWith(
+                          color: AppColors.black,
+                          fontSize: 20.sp,
+                          fontWeight: FontWeight.w900,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ))],)),
+            )
+          ],
         ),
       ),
     );
