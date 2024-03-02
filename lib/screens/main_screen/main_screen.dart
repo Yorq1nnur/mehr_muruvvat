@@ -10,6 +10,7 @@ import 'package:mehr_muruvvat/screens/main_screen/qilingan_ishlar_models.dart';
 import 'package:mehr_muruvvat/screens/qilinayotgan_ishlar_screen/qilinayotgan_ishlar_screen.dart';
 import 'package:mehr_muruvvat/screens/widgets/get_call_links.dart';
 import 'package:mehr_muruvvat/utils/colors/app_colors.dart';
+import 'package:mehr_muruvvat/utils/styles/app_text_style.dart';
 import '../qilingan_ishlar_screen/qilingan_ishlar_screen.dart';
 
 class MainScreen extends StatefulWidget {
@@ -79,6 +80,16 @@ class _MainScreenState extends State<MainScreen> {
               title: "IBRATLI VIDEOLAR",
             ),
             Spacer(),
+            Center(
+              child: Text(
+                "Biz haqimizda:",
+                style: AppTextStyle.bodoniBold.copyWith(
+                  color: AppColors.black,
+                  fontWeight: FontWeight.w900,
+                  fontSize: 20.sp,
+                ),
+              ),
+            ),
             GetCallLinks(),
           ],
         ),

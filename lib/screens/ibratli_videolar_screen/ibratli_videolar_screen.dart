@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mehr_muruvvat/screens/ibratli_videolar_links_screen/ibratli_videolar_links_screen.dart';
-import 'package:mehr_muruvvat/screens/ibratli_videolar_screen/models/youtube_links.dart';
+import 'package:mehr_muruvvat/screens/qilingan_ishlar_screen/models/qilingan_ishlar_youtube_links.dart';
 import 'package:mehr_muruvvat/screens/widgets/carusel_models.dart';
 import 'package:mehr_muruvvat/utils/colors/app_colors.dart';
 import 'package:mehr_muruvvat/utils/styles/app_text_style.dart';
@@ -53,7 +53,7 @@ class _IbratliVideolarScreenState extends State<IbratliVideolarScreen> {
               height: 10.h,
             ),
             const GetMainCarusel(
-              images: YouTubeLinks.images,
+              images: IbratliVideolarYouTubeLinks.images,
             ),
             Expanded(
               child: SingleChildScrollView(
@@ -65,7 +65,7 @@ class _IbratliVideolarScreenState extends State<IbratliVideolarScreen> {
                   child: Column(
                     children: [
                       ...List.generate(
-                          YouTubeLinks.videoTitles.length,
+                          IbratliVideolarYouTubeLinks.videoTitles.length,
                           (index) => Padding(
                                 padding: EdgeInsets.symmetric(
                                   horizontal: 10.w,
@@ -76,7 +76,14 @@ class _IbratliVideolarScreenState extends State<IbratliVideolarScreen> {
                                       context,
                                       MaterialPageRoute(
                                         builder: (context) =>
-                                            IbratliVideolarLinksScreen(),
+                                            IbratliVideolarLinksScreen(
+                                          youTubeLinks:
+                                              IbratliVideolarYouTubeLinks.youTubeLinks[index],
+                                          imagesPath: IbratliVideolarYouTubeLinks.images,
+                                          imagePath: IbratliVideolarYouTubeLinks.images[index],
+                                          videoTitle:
+                                              IbratliVideolarYouTubeLinks.videoTitles[index],
+                                        ),
                                       ),
                                     );
                                   },
@@ -85,7 +92,7 @@ class _IbratliVideolarScreenState extends State<IbratliVideolarScreen> {
                                       Align(
                                         alignment: Alignment.topCenter,
                                         child: Text(
-                                          YouTubeLinks.videoTitles[index],
+                                          IbratliVideolarYouTubeLinks.videoTitles[index],
                                           style:
                                               AppTextStyle.bodoniBold.copyWith(
                                             color: AppColors.black,
@@ -99,7 +106,7 @@ class _IbratliVideolarScreenState extends State<IbratliVideolarScreen> {
                                           16.r,
                                         ),
                                         child: Image.asset(
-                                          YouTubeLinks.images[index],
+                                          IbratliVideolarYouTubeLinks.images[index],
                                           height: 200.h,
                                           width: double.infinity,
                                           fit: BoxFit.contain,
