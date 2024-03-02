@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mehr_muruvvat/screens/ibratli_videolar_screen/models/ibratli_vediolar_youtube_links.dart';
 import 'package:mehr_muruvvat/screens/qilingan_ishlar_screen/models/qilingan_ishlar_models.dart';
+import 'package:mehr_muruvvat/screens/qilingan_ishlar_screen/models/qilingan_ishlar_youtube_links.dart';
 import 'package:mehr_muruvvat/screens/widgets/carusel_models.dart';
 import 'package:mehr_muruvvat/utils/styles/app_text_style.dart';
 import 'package:zoom_tap_animation/zoom_tap_animation.dart';
@@ -57,69 +57,68 @@ class _QilinganIshlarScreenState extends State<QilinganIshlarScreen> {
             ),
             Expanded(
               child: SingleChildScrollView(
-                  padding: EdgeInsets.symmetric(
-                    vertical: 10.h,
-                  ),
-                  physics: BouncingScrollPhysics(),
-                  scrollDirection: Axis.vertical,
-                  child: Column(
-                    children: [
-                      ...List.generate(
-                          IbratliVideolarYouTubeLinks.videoTitles.length,
-                          (index) => Padding(
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: 10.w,
-                                ),
-                                child: ZoomTapAnimation(
-                                  onTap: () {
-                                    // Navigator.push(
-                                    //   context,
-                                    //   MaterialPageRoute(
-                                    //     builder: (context) =>
-                                    //         IbratliVideolarLinksScreen(
-                                    //           youTubeLinks:
-                                    //           IbratliVideolarYouTubeLinks.youTubeLinks[index],
-                                    //           imagesPath: IbratliVideolarYouTubeLinks.images,
-                                    //           imagePath: IbratliVideolarYouTubeLinks.images[index],
-                                    //           videoTitle:
-                                    //           IbratliVideolarYouTubeLinks.videoTitles[index],
-                                    //         ),
-                                    //   ),
-                                    // );
-                                  },
-                                  child: Column(
-                                    children: [
-                                      Align(
-                                        alignment: Alignment.topCenter,
-                                        child: Text(
-                                          IbratliVideolarYouTubeLinks
-                                              .videoTitles[index],
-                                          style:
-                                              AppTextStyle.bodoniBold.copyWith(
-                                            color: AppColors.black,
-                                            fontSize: 20.sp,
-                                            fontWeight: FontWeight.w900,
-                                          ),
-                                        ),
-                                      ),
-                                      ClipRRect(
-                                        borderRadius: BorderRadius.circular(
-                                          16.r,
-                                        ),
-                                        child: Image.asset(
-                                          IbratliVideolarYouTubeLinks
-                                              .images[index],
-                                          height: 200.h,
-                                          width: double.infinity,
-                                          fit: BoxFit.contain,
-                                        ),
-                                      ),
-                                    ],
+                padding: EdgeInsets.symmetric(
+                  vertical: 10.h,
+                ),
+                physics: BouncingScrollPhysics(),
+                scrollDirection: Axis.vertical,
+                child: Column(
+                  children: [
+                    ...List.generate(
+                      QilinganIshlarYouTubeLinks.videoTitles.length,
+                      (index) => Padding(
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 10.w,
+                        ),
+                        child: ZoomTapAnimation(
+                          onTap: () {
+                            // Navigator.push(
+                            //   context,
+                            //   MaterialPageRoute(
+                            //     builder: (context) =>
+                            //         IbratliVideolarLinksScreen(
+                            //           youTubeLinks:
+                            //           IbratliVideolarYouTubeLinks.youTubeLinks[index],
+                            //           imagesPath: IbratliVideolarYouTubeLinks.images,
+                            //           imagePath: IbratliVideolarYouTubeLinks.images[index],
+                            //           videoTitle:
+                            //           IbratliVideolarYouTubeLinks.videoTitles[index],
+                            //         ),
+                            //   ),
+                            // );
+                          },
+                          child: Column(
+                            children: [
+                              Align(
+                                alignment: Alignment.topCenter,
+                                child: Text(
+                                  QilinganIshlarYouTubeLinks.videoTitles[index],
+                                  style: AppTextStyle.bodoniBold.copyWith(
+                                    color: AppColors.black,
+                                    fontSize: 20.sp,
+                                    fontWeight: FontWeight.w900,
                                   ),
                                 ),
-                              ))
-                    ],
-                  )),
+                              ),
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(
+                                  16.r,
+                                ),
+                                child: Image.asset(
+                                  QilinganIshlarYouTubeLinks.images[index],
+                                  height: 200.h,
+                                  width: double.infinity,
+                                  fit: BoxFit.contain,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             )
           ],
         ),
