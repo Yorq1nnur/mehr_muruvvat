@@ -57,8 +57,11 @@ class _IbratliVideolarLinksScreenState
               height: 10.h,
             ),
             GetMainCarusel(
-              images: YouTubeLinks.images,
-            )
+              images: widget.imagesPath,
+            ),
+            SizedBox(
+              height: 20.h,
+            ),
           ],
         ),
       ),
