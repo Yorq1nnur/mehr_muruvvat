@@ -53,7 +53,7 @@ class _IbratliVideolarScreenState extends State<IbratliVideolarScreen> {
               height: 10.h,
             ),
             const GetMainCarusel(
-              images: IbratliVideolarYouTubeLinks.images,
+              images: QilinganIshlarYouTubeLinks.images,
             ),
             Expanded(
               child: SingleChildScrollView(
@@ -65,7 +65,7 @@ class _IbratliVideolarScreenState extends State<IbratliVideolarScreen> {
                   child: Column(
                     children: [
                       ...List.generate(
-                          IbratliVideolarYouTubeLinks.videoTitles.length,
+                          QilinganIshlarYouTubeLinks.videoTitles.length,
                           (index) => Padding(
                                 padding: EdgeInsets.symmetric(
                                   horizontal: 10.w,
@@ -78,11 +78,11 @@ class _IbratliVideolarScreenState extends State<IbratliVideolarScreen> {
                                         builder: (context) =>
                                             IbratliVideolarLinksScreen(
                                           youTubeLinks:
-                                              IbratliVideolarYouTubeLinks.youTubeLinks[index],
-                                          imagesPath: IbratliVideolarYouTubeLinks.images,
-                                          imagePath: IbratliVideolarYouTubeLinks.images[index],
+                                              QilinganIshlarYouTubeLinks.youTubeLinks[index],
+                                          imagesPath: QilinganIshlarYouTubeLinks.images,
+                                          imagePath: QilinganIshlarYouTubeLinks.images[index],
                                           videoTitle:
-                                              IbratliVideolarYouTubeLinks.videoTitles[index],
+                                              QilinganIshlarYouTubeLinks.videoTitles[index],
                                         ),
                                       ),
                                     );
@@ -92,7 +92,7 @@ class _IbratliVideolarScreenState extends State<IbratliVideolarScreen> {
                                       Align(
                                         alignment: Alignment.topCenter,
                                         child: Text(
-                                          IbratliVideolarYouTubeLinks.videoTitles[index],
+                                          QilinganIshlarYouTubeLinks.videoTitles[index],
                                           style:
                                               AppTextStyle.bodoniBold.copyWith(
                                             color: AppColors.black,
@@ -106,7 +106,7 @@ class _IbratliVideolarScreenState extends State<IbratliVideolarScreen> {
                                           16.r,
                                         ),
                                         child: Image.asset(
-                                          IbratliVideolarYouTubeLinks.images[index],
+                                          QilinganIshlarYouTubeLinks.images[index],
                                           height: 200.h,
                                           width: double.infinity,
                                           fit: BoxFit.contain,

@@ -1,6 +1,6 @@
 import 'package:mehr_muruvvat/utils/images/app_images.dart';
 
-class IbratliVideolarYouTubeLinks {
+class QilinayotganIshlarYouTubeLinks {
 
   static const List<List<String>> simpleImages = [
     [],
@@ -101,5 +101,5 @@ class IbratliVideolarYouTubeLinks {
     AppImages.savobliIsh,
   ];
 
-  IbratliVideolarYouTubeLinks();
+  QilinayotganIshlarYouTubeLinks();
 }
