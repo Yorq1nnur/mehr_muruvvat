@@ -1,6 +1,19 @@
 import 'package:mehr_muruvvat/utils/images/app_images.dart';
 
 class YouTubeLinks {
+
+  static const List<List<String>> simpleImages = [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+  ];
+
   static const List<String> youTubeLinks = [
     ///TODO So'qir
     "https://youtu.be/agk2A75T3Ds?si=axBT9_ZeLb333z_1",
