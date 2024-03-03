@@ -44,6 +44,43 @@ class AppImages {
   static const String firstSplash = "assets/images/first_splash.jpg";
 
 //.jpg
+  ///TODO IQTIDORLI YOSHLARNI IZLAB!
+  static const iqtidor1 = "assets/images/iqtidorli/iqtidor1.jpg";
+  static const iqtidor2 = "assets/images/iqtidorli/iqtidor2.jpg";
+  static const iqtidor3 = "assets/images/iqtidorli/iqtidor3.jpg";
+  static const iqtidor4 = "assets/images/iqtidorli/iqtidor4.jpg";
+  static const iqtidor5 = "assets/images/iqtidorli/iqtidor5.jpg";
+  static const iqtidor6 = "assets/images/iqtidorli/iqtidor6.jpg";
+  static const iqtidor7 = "assets/images/iqtidorli/iqtidor7.jpg";
+  static const iqtidor8 = "assets/images/iqtidorli/iqtidor8.jpg";
+  static const iqtidor9 = "assets/images/iqtidorli/iqtidor9.jpg";
+  static const iqtidor10 = "assets/images/iqtidorli/iqtidor10.jpg";
+  static const iqtidor11 = "assets/images/iqtidorli/iqtidor11.JPG";
+  static const iqtidor12 = "assets/images/iqtidorli/iqtidor12.JPG";
+  static const iqtidor13 = "assets/images/iqtidorli/iqtidor13.JPG";
+  static const iqtidor14 = "assets/images/iqtidorli/iqtidor14.JPG";
+  static const iqtidor15 = "assets/images/iqtidorli/iqtidor15.JPG";
+  static const iqtidor16 = "assets/images/iqtidorli/iqtidor16.JPG";
+  static const iqtidor17 = "assets/images/iqtidorli/iqtidor17.JPG";
+  static const iqtidor18 = "assets/images/iqtidorli/iqtidor18.JPG";
+  static const iqtidor19 = "assets/images/iqtidorli/iqtidor19.JPG";
+  static const iqtidor20 = "assets/images/iqtidorli/iqtidor20.JPG";
+  static const iqtidor21 = "assets/images/iqtidorli/iqtidor21.JPG";
+  static const iqtidor22 = "assets/images/iqtidorli/iqtidor22.JPG";
+  static const iqtidor23 = "assets/images/iqtidorli/iqtidor23.JPG";
+  static const iqtidor24 = "assets/images/iqtidorli/iqtidor24.JPG";
+  static const iqtidor25 = "assets/images/iqtidorli/iqtidor25.JPG";
+  static const iqtidor26 = "assets/images/iqtidorli/iqtidor26.JPG";
+  static const iqtidor27 = "assets/images/iqtidorli/iqtidor27.JPG";
+  static const iqtidor28 = "assets/images/iqtidorli/iqtidor28.JPG";
+  static const iqtidor29 = "assets/images/iqtidorli/iqtidor29.JPG";
+  static const iqtidor30 = "assets/images/iqtidorli/iqtidor30.jpg";
+  static const iqtidor31 = "assets/images/iqtidorli/iqtidor31.jpg";
+  static const iqtidor32 = "assets/images/iqtidorli/iqtidor32.jpg";
+  static const iqtidor33 = "assets/images/iqtidorli/iqtidor33.jpg";
+  static const iqtidor34 = "assets/images/iqtidorli/iqtidor34.jpg";
+  static const iqtidor35 = "assets/images/iqtidorli/iqtidor35.jpg";
+  static const iqtidor36 = "assets/images/iqtidorli/iqtidor36.jpg";
 
 //.gif
 
