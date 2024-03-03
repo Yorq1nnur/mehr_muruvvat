@@ -1,12 +1,13 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mehr_muruvvat/screens/global_widgets/call_links.dart';
 import 'package:mehr_muruvvat/screens/global_widgets/global_arrow_back.dart';
 import 'package:mehr_muruvvat/screens/widgets/carusel_models.dart';
 import 'package:mehr_muruvvat/utils/colors/app_colors.dart';
+import 'package:mehr_muruvvat/utils/images/app_images.dart';
 import 'package:mehr_muruvvat/utils/styles/app_text_style.dart';
+import 'package:zoom_tap_animation/zoom_tap_animation.dart';
 
 class LoyihalarLinksScreen extends StatefulWidget {
   const LoyihalarLinksScreen({
@@ -50,7 +51,7 @@ class _LoyihalarLinksScreenState extends State<LoyihalarLinksScreen> {
             ),
             Center(
               child: Text(
-                widget.title,
+                "${widget.title}\n${widget.year}",
                 style: AppTextStyle.bodoniBold.copyWith(
                   color: AppColors.black,
                   fontSize: 20.sp,
@@ -64,20 +65,47 @@ class _LoyihalarLinksScreenState extends State<LoyihalarLinksScreen> {
             ),
             Expanded(
               child: GridView.count(
-                childAspectRatio: 0.9,
+                childAspectRatio: 1.5,
                 padding: EdgeInsets.symmetric(
                   horizontal: 10.w,
                 ),
                 physics: const BouncingScrollPhysics(),
-                crossAxisSpacing: 5,
+                crossAxisSpacing: 5.w,
+                mainAxisSpacing: 5.h,
                 crossAxisCount: 2,
                 children: [
                   ...List.generate(
                     widget.images.length,
-                    (index) => ClipRRect(
-                      borderRadius: BorderRadius.circular(
-                        16.r,
-                      ),
+                    (index) => ZoomTapAnimation(
+                      onTap: () {
+                        showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return AlertDialog(
+                              content: Image.asset(
+                                widget.images[index],
+                              ),
+                              actions: [
+                                ZoomTapAnimation(
+                                  onTap: () {
+                                    Navigator.of(context).pop();
+                                  },
+                                  child: Center(
+                                    child: Text(
+                                      'Cancel',
+                                      style: AppTextStyle.bodoniBold.copyWith(
+                                        color: AppColors.black,
+                                        fontSize: 20.sp,
+                                        fontWeight: FontWeight.w900,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            );
+                          },
+                        );
+                      },
                       child: Image.asset(
                         widget.images[index],
                         // width: double.infinity,
@@ -88,6 +116,29 @@ class _LoyihalarLinksScreenState extends State<LoyihalarLinksScreen> {
                   ),
                 ],
               ),
+            ),
+            SizedBox(
+              height: 10.h,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "YOUTUBEDA KO'RISH",
+                  style: AppTextStyle.bodoniBold.copyWith(
+                    color: AppColors.black,
+                    fontWeight: FontWeight.w900,
+                    fontSize: 20.sp,
+                  ),
+                ),
+                SizedBox(
+                  width: 10.w,
+                ),
+                CallLinks(
+                  link: widget.link,
+                  imagePath: AppImages.youTube,
+                ),
+              ],
             )
           ],
         ),
