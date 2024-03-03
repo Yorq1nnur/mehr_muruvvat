@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mehr_muruvvat/screens/ibratli_videolar_screen/ibratli_videolar_screen.dart';
+import 'package:mehr_muruvvat/screens/loyihalar_screen/loyihalar_screen.dart';
 import 'package:mehr_muruvvat/screens/widgets/carusel_models.dart';
 import 'package:mehr_muruvvat/screens/main_screen/get_container.dart';
 import 'package:mehr_muruvvat/screens/qilingan_ishlar_screen/models/qilingan_ishlar_models.dart';
@@ -21,7 +22,6 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-  int activeIndex = 0;
   final PageController pageController = PageController();
 
   @override
@@ -67,6 +67,17 @@ class _MainScreenState extends State<MainScreen> {
                 );
               },
               title: "QILINAYOTGAN ISHLAR",
+            ),
+            GetZoomContainer(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => LoyihalarScreen(),
+                  ),
+                );
+              },
+              title: "LOYIHALAR",
             ),
             GetZoomContainer(
               onTap: () {
