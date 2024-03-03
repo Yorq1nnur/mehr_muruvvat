@@ -73,14 +73,6 @@ class AppImages {
   static const iqtidor26 = "assets/images/iqtidorli/iqtidor26.JPG";
   static const iqtidor27 = "assets/images/iqtidorli/iqtidor27.JPG";
   static const iqtidor28 = "assets/images/iqtidorli/iqtidor28.JPG";
-  static const iqtidor29 = "assets/images/iqtidorli/iqtidor29.JPG";
-  static const iqtidor30 = "assets/images/iqtidorli/iqtidor30.jpg";
-  static const iqtidor31 = "assets/images/iqtidorli/iqtidor31.jpg";
-  static const iqtidor32 = "assets/images/iqtidorli/iqtidor32.jpg";
-  static const iqtidor33 = "assets/images/iqtidorli/iqtidor33.jpg";
-  static const iqtidor34 = "assets/images/iqtidorli/iqtidor34.jpg";
-  static const iqtidor35 = "assets/images/iqtidorli/iqtidor35.jpg";
-  static const iqtidor36 = "assets/images/iqtidorli/iqtidor36.jpg";
 
 //.gif
 
