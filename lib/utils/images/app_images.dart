@@ -32,7 +32,7 @@ class AppImages {
   ///TODO Ehsonning mukofoti
   static const String ehsonningMukofoti = "assets/images/youtube/ehsonning_mukofoti.png";
   ///TODO Bolallikka chipta
-  static const String bolalikkaChipta = "assets/images/youtube/bolalikka_chipta.png";
+  static const String bolalikkaChipta = "assets/images/youtube/bolalikka_chipta.jpg";
   ///TODO Hamma ham bunday savobli ishni qila olmaydi
   static const String savobliIsh = "assets/images/youtube/savobli_ish.png";
 

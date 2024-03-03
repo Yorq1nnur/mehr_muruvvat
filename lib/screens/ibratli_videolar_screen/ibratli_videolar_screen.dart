@@ -55,69 +55,77 @@ class _IbratliVideolarScreenState extends State<IbratliVideolarScreen> {
             const GetMainCarusel(
               images: QilinganIshlarYouTubeLinks.images,
             ),
+            SizedBox(
+              height: 10.h,
+            ),
             Expanded(
               child: SingleChildScrollView(
-                  padding: EdgeInsets.symmetric(
-                    vertical: 10.h,
-                  ),
-                  physics: BouncingScrollPhysics(),
-                  scrollDirection: Axis.vertical,
-                  child: Column(
-                    children: [
-                      ...List.generate(
-                          QilinganIshlarYouTubeLinks.videoTitles.length,
-                          (index) => Padding(
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: 10.w,
+                padding: EdgeInsets.symmetric(
+                  vertical: 10.h,
+                ),
+                physics: BouncingScrollPhysics(),
+                scrollDirection: Axis.vertical,
+                child: Column(
+                  children: [
+                    ...List.generate(
+                      QilinganIshlarYouTubeLinks.videoTitles.length,
+                      (index) => Padding(
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 10.w,
+                        ),
+                        child: ZoomTapAnimation(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) =>
+                                    IbratliVideolarLinksScreen(
+                                  youTubeLinks: QilinganIshlarYouTubeLinks
+                                      .youTubeLinks[index],
+                                  imagesPath: QilinganIshlarYouTubeLinks.images,
+                                  imagePath:
+                                      QilinganIshlarYouTubeLinks.images[index],
+                                  videoTitle: QilinganIshlarYouTubeLinks
+                                      .videoTitles[index],
                                 ),
-                                child: ZoomTapAnimation(
-                                  onTap: () {
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) =>
-                                            IbratliVideolarLinksScreen(
-                                          youTubeLinks:
-                                              QilinganIshlarYouTubeLinks.youTubeLinks[index],
-                                          imagesPath: QilinganIshlarYouTubeLinks.images,
-                                          imagePath: QilinganIshlarYouTubeLinks.images[index],
-                                          videoTitle:
-                                              QilinganIshlarYouTubeLinks.videoTitles[index],
-                                        ),
-                                      ),
-                                    );
-                                  },
-                                  child: Column(
-                                    children: [
-                                      Align(
-                                        alignment: Alignment.topCenter,
-                                        child: Text(
-                                          QilinganIshlarYouTubeLinks.videoTitles[index],
-                                          style:
-                                              AppTextStyle.bodoniBold.copyWith(
-                                            color: AppColors.black,
-                                            fontSize: 20.sp,
-                                            fontWeight: FontWeight.w900,
-                                          ),
-                                        ),
-                                      ),
-                                      ClipRRect(
-                                        borderRadius: BorderRadius.circular(
-                                          16.r,
-                                        ),
-                                        child: Image.asset(
-                                          QilinganIshlarYouTubeLinks.images[index],
-                                          height: 200.h,
-                                          width: double.infinity,
-                                          fit: BoxFit.contain,
-                                        ),
-                                      ),
-                                    ],
+                              ),
+                            );
+                          },
+                          child: Column(
+                            children: [
+                              Align(
+                                alignment: Alignment.topCenter,
+                                child: Padding(
+                                  padding: EdgeInsets.symmetric(
+                                    vertical: 10.h,
+                                  ),
+                                  child: Text(
+                                    QilinganIshlarYouTubeLinks
+                                        .videoTitles[index],
+                                    style: AppTextStyle.bodoniBold.copyWith(
+                                      color: AppColors.black,
+                                      fontSize: 20.sp,
+                                      fontWeight: FontWeight.w900,
+                                    ),
                                   ),
                                 ),
-                              ))
-                    ],
-                  )),
+                              ),
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(
+                                  24.r,
+                                ),
+                                child: Image.asset(
+                                  QilinganIshlarYouTubeLinks.images[index],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             )
           ],
         ),
